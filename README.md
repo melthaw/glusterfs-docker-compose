@@ -1,10 +1,9 @@
 # Overview
 
+Document Referenced in this project
+
 Docker Container
 > https://github.com/gluster/gluster-containers
-
-Java Client
-> https://github.com/gluster/glusterfs-java-filesystem/
 
 Admin Guide
 > https://gluster.readthedocs.io/en/latest/Administrator%20Guide/overview/
@@ -12,9 +11,9 @@ Admin Guide
 Official Volume Setup
 > https://gluster.readthedocs.io/en/latest/Administrator%20Guide/Setting%20Up%20Volumes/
 
-# Get Started
+# Quick Started
 
-Please execute the following command one by one in CLI:
+Please execute the following commands one by one in CLI:
 
 ```
 docker-compose up -d glusterfs1 glusterfs2 glusters3
@@ -28,9 +27,11 @@ docker-compose exec glusterfs2 setfacl -m u:1000:rwx /data/glusterfs/test
 docker-compose exec glusterfs1 tail -f /var/log/glusterfs/bricks/data-glusterfs-test.log
 ```
 
-Let's explain the command in the script
+In the next section, we will explain the command in the script.
 
-## Command Refz
+# Explain
+
+## Official Command Document Reference
 
 > https://gluster.readthedocs.io/en/latest/CLI-Reference/cli-main/
 
@@ -65,7 +66,7 @@ volume remove-brick |volume remove-brick brick-1 ... brick-n <start,stop,status,
 volume replace-brick |volume replace-brick volname old-brick new-brick |Replace old-brick of volname with new-brick
 volume delete |volume delete volname |Delete volname
 
-### Example
+## Usage Sample
 
 ```
 $> gluster pool list
