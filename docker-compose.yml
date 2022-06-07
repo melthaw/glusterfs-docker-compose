@@ -28,8 +28,8 @@ services:
       - glusterfs_log_volume2:/var/log/glusterfs
       - gulsterfs_data_volume2:/data/glusterfs
 
-  glusters3:
-    container_name: fss-glusters3
+  glusterfs3:
+    container_name: fss-glusterfs3
     image: gluster/gluster-s3
     privileged: true
     networks:
