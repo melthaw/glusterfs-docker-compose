@@ -29,7 +29,7 @@ services:
       - gulsterfs_data_volume2:/data/glusterfs
 
   glusterfs3:
-    container_name: fss-glusters3
+    container_name: fss-glusterfs3
     image: gluster/gluster-s3
     privileged: true
     networks:
